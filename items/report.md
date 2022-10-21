@@ -333,8 +333,8 @@ Production Rules:
     - 51% method coverage
     - 72% line coverage
 
-![img.png](images/parserTestCoverage.png)
-![img.png](images/parserTestCoverage2.png)
+![parserTestCoverage.png](images/parserTestCoverage.png)
+![parserTestCoverage2.png](images/parserTestCoverage2.png)
 
   **AVLTree Test**
   - For all classes of AVLTree, it covers the following:
@@ -342,7 +342,7 @@ Production Rules:
   - 85% method coverage
   - 64% line coverage
 
-![img.png](images/avlTestCoverage.png)
+![avlTestCoverage.png](images/avlTestCoverage.png)
 
 
 ## Implemented Features
