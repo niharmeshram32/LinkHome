@@ -195,7 +195,7 @@ Application workflow and features:
 8. After filtering, the user can also sort the filter records in ascending or descending values of rent.
 9. Also, if a user wants to know more information about a particular house, then by clicking on the image would navigate to the detailed page of the property. 
 10. The user can choose between two different payment options (MasterCard, Paypal) to confirm the booking. 
-11. Once the payment page is loaded, if the particular property is a scam, an alert box pops up saying it is a scam, would you still like to make the payment? If a user clicks yes, then the payment is successful.
+11. Once the user has clicked on confirmed and if the particular property is a scam, an alert box pops up saying it is a scam, would you still like to make the payment? If a user clicks yes, then the payment is successful.
 
 ## Application Use Cases and or Examples
 
@@ -272,7 +272,9 @@ then LinkHome helps to meet all these requirements.
        4. BookmarkAdapter.java
 
     * Reasons:
-      * It is easier to add and delete items from the arraylist as we are frequently using this in our application
+      * It is easier to add and delete items from the particular position in the arraylist.
+      * Since we need to continuously update the wishlist by adding and deleting items from the firebase and the UI, so arraylist helps to that efficiently.
+      * Arraylists are also easier to resize. 
         
 
 **Design Patterns**
@@ -316,24 +318,40 @@ Production Rules:
 ## Summary of Known Errors and Bugs
 
 **1. Bug 1:**
-- Once the user sign up in the app, the app closes and user has to clear the cache
-- Post that, the user can run the application again and sign in using the new credentials.
+- Sometimes the user signs up, the app crashes. This can be fixed by clearing the device cache.
+- Although the app crashes, the user can still login in the application again using the new credentials.
 
 **2. Bug 2:**
-- On the items page, every 6th image has an filled heart icon already but the 6th image is not added to the wishlist page since the user does not add it
-- The particular 6th image is not added to the wishlist by the user
+- If the first item is bookmarked by clicking on the heart icon, then every 6th post after the bookmark post has also a filled heart icon.
+- However only the first item chosen is added to the wishlist page.
 
 **3. Bug 3:**
 - On the items page, when the user wants to search something such as city=Canberra then if the user writes anything instead of "city", still the search happens correctly
 
 **4. Bug 4:**
-- If the user wants to view the app in landscape mode and orientation changes, then it elements on the screen does not resize
+- If the user wants to view the app in landscape mode and orientation changes, then it elements on the screen does not resize.
+
+**5. Bug 5:**
+- In the payment page, the application does not check whether the user has filled in the fields or not.
+- It still makes the payment ans shows payment is successful.
 
 ## Testing Summary
 
 - Number of test cases: 9 test methods for AVLTree, 7 test methods for Parser
 
-- Code coverage: 25% as per android studio while running the test classes with the option "Run with Coverage"
+- Code coverage:
+
+    **Parser Test**
+    - For all classes of Tokenizer, it covers the following:
+    - 92% class coverage
+    - 51% method coverage
+    - 72% line coverage
+
+    **AVLTree Test**
+    - For all classes of Tokenizer, it covers the following:
+    - 100% class coverage
+    - 85% method coverage
+    - 64% line coverage
 
 - Types of tests created: AVLTree test, Parser test
 
