@@ -29,10 +29,10 @@
 
 | UID |      Name      | Role |
 | :--- |:--------------:| ---: |
-| u7268598 | Devanshi Dhall | GUI, Login Screen, Data Structure, Singleton Design Pattern, Tokenizer and Parser, Testing, Report Writing, Firebase Authentication, Functionality: Filter a list|
-| u7399886 | Avani Dhaliwal | GUI, Data Structure, State Design Pattern, Report Writing, Bookmarks and Navigation Menu, Testing, Firebase Authentication, Functionality: Filter a list|
-| u7395484 | Nihar Meshram  | GUI, Facade Design Pattern, Firebase Realtime Database, Testing, UML Diagram, Functionality: Payment Process |
-| u6523462 |   Hao Zhang    | GUI, Facade Design Pattern, Firebase Realtime Database, Tokenizer and Parser, Testing, UML Diagram, Functionality: Sort the items, Payment Process |
+| u7268598 | Devanshi Dhall | GUI, Login Screen, Data Structure, Singleton Design Pattern, Tokenizer and Parser, Testing, Report Writing, Firebase Authentication|
+| u7399886 | Avani Dhaliwal | GUI, Data Structure, State Design Pattern, Report Writing, Bookmarks and Navigation Menu, Testing, Firebase Authentication|
+| u7395484 | Nihar Meshram  | GUI, Facade Design Pattern, Firebase Realtime Database, Testing, UML Diagram, Payment Process |
+| u6523462 |   Hao Zhang    | GUI, Facade Design Pattern, Firebase Realtime Database, Tokenizer and Parser, Testing, UML Diagram, Payment Process |
 
 ## Summary of Individual Contributions
 
@@ -40,17 +40,18 @@
 
 *[Code Implementation. Which features did you implement? Which classes or methods was each member involved in? Provide an approximate proportion in percentage of the contribution of each member to the whole code implementation, e.g. 30%.]*
 
-**u7268598, Devanshi Dhall contributed 25% of the code. Here are the contributions:**
+### u7268598, Devanshi Dhall contributed 25% of the code. Here are the contributions:
 
 **Code Implementation:**
 * All classes in login package
 * All classes in tokenizer package
+* *[Data.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/posts/Data.java)*
 * homePage/posts/Data.class: compareTo()
 * stateDesignPattern/User.class: getInstance()
 * homePage/payment/mastercard.class: confirm.setOnClickListener()
 * homePage/payment/Paypal.class: confirm.setOnClickListener()
 * homePage/payment/PaymentSuccessful.class
-* homePage/DatabaseFragment.class: onCreateOptionsMenu()
+* homePage/posts/DatabaseFragment.class: onCreateOptionsMenu()
 * facade/PaymentMaker.class 
 * homePage/bookmarks/BookmarkAdapter.class: checkBox()
 * avl/AVLTree.class: Creation and Insertion 
@@ -59,6 +60,7 @@
 * avl/Tree.class 
 * AVLTreeTest.class: immutableTest(), insertInOrderTest()
 * ParserTest.class
+* homePage/homePageFragment.class: filterByRent(), filterByCity(), filterPosts()
 * MainActivity.class
 * Graphical User Interface/ Design:
   * layout/activity_detailed_page.xml
@@ -69,14 +71,13 @@
   * layout/signup_tab_fragment.xml
   * menu/search.xml
 
-**Code Design:** Singleton Design pattern, AVL Tree, Tokenizer and Parser
+**Code Design:** Singleton Design pattern, AVL Tree, Tokenizer and Parser, Firebase Login Authentication
 
-**Features:** Firebase Login Authentication
+**UI Design:** Login, SignUp, SearchBar, Payment, Detailed Page information
 
 **Report:** Team members and Roles, Summary of Individual Contributions, Conflict Resolution Protocol, Application Description, Team meetings (2,3,4)
 
-
-**u7399886, Avani Dhaliwal contributed 25% of the code. Here are the contributions:**
+### u7399886, Avani Dhaliwal contributed 25% of the code. Here are the contributions:
 
 **Code Implementation:**
 * All classes in stateDesignPattern package
@@ -91,6 +92,7 @@
 * homePage/posts/DataAdapter.class: addDataToFirebase()
 * homePage/posts/DataAdapter.class: deleteDataFromFirebase()
 * homePage/posts/Data.class: compareTo()
+* homePage/homePageFragment.class
 * AVLTreeTest.class  
 * MainActivity.class
 * Graphical User Interface/ Design:
@@ -101,13 +103,13 @@
   * layout/nav_header.xml
   * menu/drawer_menu.xml
   
-**Code Design:** State Design Pattern, AVL Tree
+**Code Design:** State Design Pattern, AVL Tree, Firebase Login Authentication
 
-**Features:** Firebase Login Authentication
+**UI Design:** Navigation Bar, Detailed Page information, HashMap, HomePageFragment
 
 **Report:** Summary of Individual Contributions, Team meeting 1, Application Design and Decisions, Summary of Known Errors and Bugs, Implemented Features
 
-**u6523462, Hao Zhang contributed 25% of the code. Here are the contributions:**
+### u6523462, Hao Zhang contributed 25% of the code. Here are the contributions:
 
 **Code Implementation:**
 * All classes in facade package
@@ -128,13 +130,15 @@
   * activity_payment_page.xml 
 * UML Diagram
   
-**Code Design:** Facade Design Pattern, Tokenizer and Parser
+**Code Design:** Facade Design Pattern, Tokenizer and Parser, Firebase Realtime Database 
 
-**Features:** Firebase Realtime Database (Creating and Importing data from Firebase into the Data class)
+**UI Design:** Images, Sort List Icons, RecyclerView List, Payment UI for MasterCard and Paypal, DataAdapter, Item images and description
 
 **Report:** Summary of Individual Contributions, Application UML
 
-**u7395484, Nihar Meshram contributed 25% of the code. Here are the contributions:**
+**Slides:** Made the slides
+
+### u7395484, Nihar Meshram contributed 25% of the code. Here are the contributions:
 
 **Code Implementation:**
 * homePage/posts/DataAdapter.class
@@ -153,23 +157,15 @@
   * activity_paypal.xml
   * activity_database.xml
   * item.xml
-  * Data generation
+* Data generation
   
-**Code Design:** Facade Design Pattern, AVL Tree
+**Code Design:** Facade Design Pattern, Firebase Realtime Database
 
-**Features:** Firebase Realtime Database (Creating and Importing data from Firebase into the Data class)
+**UI Design:** Images, RecyclerView List, Payment UI for MasterCard and Paypal, DataAdapter, Item images and description, Logo
 
 **Report:** Summary of Individual Contributions, Application Description, Application UML
 
-
-###*you should ALSO provide links to the specified classes and/or functions*
-
-
-*[UI Design. Specify what design did the involved member propose? What tools were used for the design?]*
-
-*[Slide preparation. Were you responsible for the slides?]*
-
-*[Miscellaneous contributions. You are welcome to provide anything that you consider as a contribution to the project or team.]*
+**Slides:** Made the slides
 
 ## Conflict Resolution Protocol
 
@@ -188,26 +184,26 @@ After a healthy discussion, we decided to go ahead with self balancing tree: AVL
 
 ## Application Description
 
-*[What is your application, what does it do? Include photos or diagrams if necessary]*
-
 Description:
 
 Our application named "LinkHome" is a booking accommodation application that specialises in rental housing. 
-Our application is focused towards building a strong and diverse culture among group of people by offering them rental property for their vacation mode or any other requirement.
+Our application is focused towards building a strong and diverse culture among group of people by offering them rental property for their vacation mode.
 
 Application workflow and features:
+
 1. If a user is new to the app, then the user needs to sign up and create an account to add items to wishlist and confirm their booking as required. 
 2. If the user already has an account on the application, then the user can directly sign in using the credentials. 
-3. User can still view thw properties without logging in the app but cannot wishlist the item.
-4. Post login, the user can view a range of rental beautiful properties for their stay along with their description.
+3. User can still view the properties without logging in the app but cannot wishlist the item.
+4. Post login, the user can view a range of beautiful rental properties for their stay along with their description.
 5. If a user likes one or more properties, then the user has the feature to save those for future preference to the wishlist page and view it later on.
 6. The user can also sort the page basis the value of rent, either from high to low or low to high. 
-7. The user can also filter the list of records basis their search for example: if a user wants to view all the properties in a particular city with rent less than 300, then it would filter those records and after filtering, the user can also sort the filter records in ascending or descending values of rent.
-8. Also, if a user know more information about a particular house, then clicking on the image would navigate to the detailed page of the property. 
-9. The user can choose between two different payment options (MasterCard, Paypal) to confirm the booking. 
-10. Once the payment page is loaded, if the particular property is a scam, an alert box pops up saying it is a scam, would you like to still make the payment? If a user clicks yes, then payment is successful.
+7. The user can also filter the list of records basis their search for example: if a user wants to view all the properties in a particular city with rent less than 300, then it would filter those records.
+8. After filtering, the user can also sort the filter records in ascending or descending values of rent.
+9. Also, if a user wants to know more information about a particular house, then by clicking on the image would navigate to the detailed page of the property. 
+10. The user can choose between two different payment options (MasterCard, Paypal) to confirm the booking. 
+11. Once the payment page is loaded, if the particular property is a scam, an alert box pops up saying it is a scam, would you still like to make the payment? If a user clicks yes, then the payment is successful.
 
-**Application Use Cases and or Examples**
+## Application Use Cases and or Examples
 
 Here is a use case of our application: LinkHome
 
@@ -223,8 +219,6 @@ then LinkHome helps to meet all these requirements.
 * Users can filter the list basis their city and rent preference.
 * Users have the option to choose which payment method they are comfortable with.
 
-*List all the use cases in text descriptions or create use case diagrams. Please refer to https://www.visual-paradigm.com/guide/uml-unified-modeling-language/what-is-use-case-diagram/ for use case diagram.*
-
 ## Application UML
 
 ![ClassDiagramExample](./images/ClassDiagramExample.png) <br>
@@ -232,47 +226,64 @@ then LinkHome helps to meet all these requirements.
 
 ## Application Design and Decisions
 
-*Please give clear and concise descriptions for each subsections of this part. It would be better to list all the concrete items for each subsection and give no more than `5` concise, crucial reasons of your design. Here is an example for the subsection `Data Structures`:*
-
-*I used the following data structures in my project:*
-
-1. *LinkedList*
-
-   * *Objective: It is used for storing xxxx for xxx feature.*
-
-   * *Locations: line xxx in XXX.java, ..., etc.*
-
-   * *Reasons:*
-
-     * *It is more efficient than Arraylist for insertion with a time complexity O(1)*
-
-     * *We don't need to access the item by index for this feature*
-
-2. ...
-
-3. ...
+*We used the following data structures in my project:*
 
 **Data Structures**
 
-*[What data structures did your team utilise? Where and why?]*
-* ** We have used the AVL tree Data Structure ** 
-* ** We have used it for search function and for increasing the search efficiency **
-* ** We are using the AVl tree in DatabaseFragment **
+1. *AVL Tree*
+
+   * *Objective: It is used for storing the searchable items in the list for search and sort features.*
+
+   * *Locations: Under the package avl* 
+      1. AVLTree.class
+      2. BinarySearchTree
+      3. EmptyTree
+      4. Tree
+      5. DataBaseFragment.class()
+
+   * *Reasons:*
+
+     * *It is more efficient than Arraylist for insertion with a time complexity O(log n)*
+     * *AVL tree is a self balancing tree and can easily help in search feature*
+     * *It includes the property of Binary Search tree and can store the data*
+     * *Also, sorting is easy as we can compare the values by using AVL tree properties*
+
+2.  *HashMap*
+
+    * *Objective:*
+
+    * *Locations:*
+
+    * *Reasons:*
+
+        * *Add Something*
+
+
+3.  *ArrayList*
+
+    * *Objective:*
+
+    * *Locations:*
+
+    * *Reasons:*
+
+      * *Add Something*
+        
 
 **Design Patterns**
 
-*[What design patterns did your team utilise? Where and why?]*
-* ** We have decided to use the State, Singleton, Facade Design Patterns in out project**
-* ** State Design Pattern is used in the Login page **
-* ** Singleton Design Pattern is used in User class for making sure that only single user is logged in for each session  **
+* State Design Pattern: Used in to go from Login State to Logout State
+* Singleton Design pattern: Only one instance of User
+* Facade Design Pattern: Used for the Payment process by using two different payment modes
 
 **Grammar(s)**
 
 Production Rules:
-** <exp>    ::= <term> || <exp> | <term> && <exp> |  **
-     ** <operator> ::= < < | > | = > **
-     * <coefficient> ::= <unsigned integer>*
-     * <letter> ::= <alphabets>*
+
+* <exp>::=  <city> <operator> <letter> | <rent> <operator> <coefficient> | <exp> || <exp> | <exp> && <exp> *
+** <operator> ::= < < | > | = > **
+** <coefficient> ::= <unsigned integer> **
+** <letter> ::= <alphabets> **
 
     
     <Non-Terminal> ::= <some output>
@@ -280,65 +291,54 @@ Production Rules:
 
 *[How do you design the grammar? What are the advantages of your designs?]*
 
-*If there are several grammars, list them all under this section and what they relate to.*
-
 **Tokenizer and Parsers**
 
-*[Where do you use tokenizers and parsers? How are they built? What are the advantages of the designs?]*
-**the following enum defines different types of tokens. Example of accessing these: Token.Type.INT
-Token.Type.INT {INT, LESS, MORE, EQUAL, AND, OR, TEXT}**
+**Enums: {INT, LESS, MORE, EQUAL, AND, OR, TEXT}**
 
 **Surprise Item**
 
-*[If you implement the surprise item, explain how your solution addresses the surprise task. What decisions do your team make in addressing the problem?]*
-
-**Other**
-
-*[What other design decisions have you made which you feel are relevant? Feel free to separate these into their own subheadings.]*
+**For the surprise item**
+* Our group thought of to make some rental property as scam
+* If a user clicks on that scammed property, then the user would be notified by an alert box
+* If the user still clicks "Ok", then the payment is successful
+* If the user clicks "Cancel", then the user is navigated to the items page
 
 ## Summary of Known Errors and Bugs
-
-*[Where are the known errors and bugs? What consequences might they lead to?]*
 
 *Here is an example:*
 
 1. *Bug 1:*
-
 - *A space bar (' ') in the sign in email will crash the application.*
-- ...
 
 2. *Bug 2:*
-3. ...
+- *Once the user sign up in the app, the app closes and user has to clear the cache*
+- *Now, the user run the application again and sign in using the new credentials.
 
-*List all the known errors and bugs here. If we find bugs/errors that your team does not know of, it shows that your testing is not thorough.*
+3 *Bug 3:*
+- *On the items page, every nth image is wishlist but it does not add to the wishlist page*
+
 
 ## Testing Summary
 
-*[What features have you tested? What is your testing coverage?]*
-**city=Canberra && rent<400"**
-**"rent<300", "rent>300", "city=Sydney", "city=Melbourne"}**
-
 *Here is an example:*
 
-- *Number of test cases: ...*
+- *Number of test cases: 10*
 
-- *Code coverage: ...*
+- *Code coverage: Branch Complete Test*
 
-- *Types of tests created: AVLTree test, Parser test *
+- *Types of tests created: AVLTree test, Parser test*
 
-*Please provide some screenshots of your testing summary, showing the achieved testing coverage. Feel free to provide further details on your tests.*
+- *UI Testing was also done*
 
 ## Implemented Features
 
-
-###Feature Category: Search-related features <br>
-####Implemented features: <br>
+### Feature Category: Search-related features <br>
+#### Implemented features: <br>
 1. Sort a list of products returned from a search based on price, popularity, rating, availability, etc.
    (easy)
    * The user can sort the posts in descending or ascending order of price
    * Package homePage/posts, Class DatabaseFragment, method onOptionsItemSelected, Lines of code: ...
    * GUI: menu.xml
-
 
 2. Filter a list of products returned from a search based on their categories (e.g., kids, adults, kitchen,
    bedroom, etc.) (easy)
@@ -346,8 +346,8 @@ Token.Type.INT {INT, LESS, MORE, EQUAL, AND, OR, TEXT}**
    * Package homePage/posts, Class DatabaseFragment, method onCreateOptionsMenu, filterByCity, Lines of code: ...
    * GUI: search.xml
 
-###Feature Category: User Interactivity <br>
-####Implemented features: <br>
+### Feature Category: User Interactivity <br>
+#### Implemented features: <br>
 1. The ability to micro-interact with items in your app (e.g. add to watchlist/add to cart/like an
    item/report an item/add reviews (stars)) [stored in-memory]. (medium)
     * The user can save/remove a post to/from their wishlist. 
@@ -356,8 +356,8 @@ Token.Type.INT {INT, LESS, MORE, EQUAL, AND, OR, TEXT}**
     * Package homePage/bookmarks, Class BookmarkFragment
     * GUI: menu.xml
     
-###Feature Category: Creating Processes <br>
-####Implemented features: <br>
+### Feature Category: Creating Processes <br>
+#### Implemented features: <br>
 1. Payment process (fake process, do not connect to any payment provider). The user must choose
    between at least two different payment methods (e.g., credit card, cash, bitcoin). The payment
    method may add extra costs (e.g., credit card adds 1.5% to the total value). (easy)
@@ -368,8 +368,8 @@ Token.Type.INT {INT, LESS, MORE, EQUAL, AND, OR, TEXT}**
     * Package homePage/posts, Class BookmarkFragment
     * GUI: activity_mastercard.xml, activity_payment_page.xml, activity_payment_successful.xml, activity_paypal
 
-###Feature Category: Firebase Integration <br>
-####Implemented features: <br>
+### Feature Category: Firebase Integration <br>
+#### Implemented features: <br>
 1. Use Firebase to implement user Authentication/Authorisation. (easy)
    * User can both login and signup through Firebase Authenticati 2on/Authorisation. 
    * Package login, Class LoginTabFragment, method loginUser, Lines of code:...
