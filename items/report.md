@@ -113,13 +113,12 @@
 
 **Code Implementation:**
 * All classes in facade package
-* homePage/posts/DataAdapter.class 
-* homePage/posts/Data.class 
-* homePage/Mastercard.class 
-* homePage/payment/Paypal.class
-* homePage/posts/DatabaseFragment.class: onDataChange()
-* homePage/posts/DatabaseFragment.class: onOptionsItemSelected(MenuItem item)
-* ParserTest.class
+* [DataAdapter.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/posts/DataAdapter.java)
+* [Data.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/posts/Data.java)
+* [Mastercard.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/payment/Mastercard.java)
+* [Paypal.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/payment/Paypal.java)
+* [DatabaseFragment.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/posts/DatabaseFragment.java): onDataChange(), onOptionsItemSelected(MenuItem item)
+* [ParserTest.class](../../ga-22s2-comp2100-6442/app/src/test/java/au/edu/anu/cecs/linkhome/ParserTest.java)
 * All classes in tokenizer package 
 * Import and create Json File in Firebase
 * Graphical User Interface/ Design:
@@ -141,15 +140,15 @@
 ### u7395484, Nihar Meshram contributed 25% of the code. Here are the contributions:
 
 **Code Implementation:**
-* homePage/posts/DataAdapter.class
-* homePage/posts/Data.class 
-* homePage/payment/Mastercard.class 
-* homePage/payment/Paypal.class 
-* homePage/posts/DetailedPage: mastercard.setOnClickListener(), paypal.setOnClickListener()
-* facade/payment/Mastercard.class
-* facade/payment/Payment.interface
-* facade/PaymentMaker.class
-* facade/Paypal.class
+* [DataAdapter.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/posts/DataAdapter.java)
+* [Data.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/posts/Data.java)
+* [Mastercard.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/payment/Mastercard.java)
+* [Paypal.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/payment/Paypal.java)
+* [DetailedPage.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/posts/DetailedPage.java): mastercard.setOnClickListener(), paypal.setOnClickListener()
+* [Mastercard.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/facade/Mastercard.java)
+* [Payment.interface](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/facade/Payment.java)
+* [PaymentMaker.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/facade/PaymentMaker.java)
+* [Paypal.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/facade/Paypal.java)
 * Import and create Json File in Firebase
 * UML diagram
 * Graphical User Interface/ Design:
