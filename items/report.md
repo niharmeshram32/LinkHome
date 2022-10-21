@@ -1,17 +1,5 @@
 # indexOutOfBounds Report
 
-*Here are some tips to write a good report:*
-
-* *Try to summarise and list the `bullet points` of your project as many as possible rather than give long, tedious paragraphs that mix up everything together.*
-
-* *Try to create `diagrams` instead of text descriptions, which are more straightforward and explanatory.*
-
-* *Try to make your report `well structured`, which is easier for the reviewers to capture the necessary information.*
-
-*We give instructions enclosed in square brackets [...] and examples for each sections to demonstrate what are expected for your project report.*
-
-*Please remove the instructions or examples in `italic` in your final report.*
-
 ## Table of Contents
 
 1. [Team Members and Roles](#team-members-and-roles)
@@ -130,8 +118,6 @@
 
 **Report:** Summary of Individual Contributions, Application UML
 
-**Slides:** Made the slides
-
 ### u7395484, Nihar Meshram contributed 25% of the code. Here are the contributions:
 
 **Code Implementation:**
@@ -172,7 +158,7 @@ If our group met with conflicts, following are the ways we used:
 
 Following is an example of Conflict Resolution Protocol in our group:
 
-Problem: Our group initially was confused which data structure to choose for our application. 
+Problem: Our group initially was confused which data structure to choose for our application. <br>
 Solution: The members of the group discussed the strengths and weaknesses of the data structure that could be used to meet the requirements in our application. 
 After a healthy discussion, we decided to go ahead with self balancing tree: AVL tree
 
@@ -318,7 +304,7 @@ Production Rules:
 ## Summary of Known Errors and Bugs
 
 **1. Bug 1:**
-- Sometimes the user signs up, the app crashes. This can be fixed by clearing the device cache.
+- Sometimes when the user signs up, the app crashes. This can be fixed by clearing the device cache.
 - Although the app crashes, the user can still login in the application again using the new credentials.
 
 **2. Bug 2:**
@@ -326,14 +312,14 @@ Production Rules:
 - However only the first item chosen is added to the wishlist page.
 
 **3. Bug 3:**
-- On the items page, when the user wants to search something such as city=Canberra then if the user writes anything instead of "city", still the search happens correctly
+- On the items page, when the user wants to search something such as city=Canberra then if the user writes anything instead of "city" such as "abcd", the search still happens correctly
 
 **4. Bug 4:**
-- If the user wants to view the app in landscape mode and orientation changes, then it elements on the screen does not resize.
+- If the user wants to view the app in landscape mode and orientation changes, then the elements on the screen do not resize.
 
 **5. Bug 5:**
 - In the payment page, the application does not check whether the user has filled in the fields or not.
-- It still makes the payment ans shows payment is successful.
+- It still makes the payment and shows payment is successful.
 
 ## Testing Summary
 
@@ -342,18 +328,22 @@ Production Rules:
 - Code coverage:
 
     **Parser Test**
-    - For all classes of Tokenizer, it covers the following:
+    - For all classes in the package Tokenizer, it covers the following:
     - 92% class coverage
     - 51% method coverage
     - 72% line coverage
 
-    **AVLTree Test**
-    - For all classes of Tokenizer, it covers the following:
-    - 100% class coverage
-    - 85% method coverage
-    - 64% line coverage
+![img.png](images/parserTestCoverage.png)
+![img.png](images/parserTestCoverage2.png)
 
-- Types of tests created: AVLTree test, Parser test
+  **AVLTree Test**
+  - For all classes of AVLTree, it covers the following:
+  - 100% class coverage
+  - 85% method coverage
+  - 64% line coverage
+
+![img.png](images/avlTestCoverage.png)
+
 
 ## Implemented Features
 
@@ -362,13 +352,13 @@ Production Rules:
 1. Sort a list of products returned from a search based on price, popularity, rating, availability, etc.
    (easy)
    * The user can sort the posts in descending or ascending order of price
-   * Package homePage/posts, Class DatabaseFragment, method onOptionsItemSelected, Lines of code: ...
+   * Package homePage/posts, Class DatabaseFragment, method onOptionsItemSelected, Lines of code: 170-185
    * GUI: menu.xml
 
 2. Filter a list of products returned from a search based on their categories (e.g., kids, adults, kitchen,
    bedroom, etc.) (easy)
    * The user can filter the posts based on different cities. 
-   * Package homePage/posts, Class DatabaseFragment, method onCreateOptionsMenu, filterByCity, Lines of code: ...
+   * Package homePage, Class HomePageFragment, method filterByRent, filterByCity, filterPosts. Lines of code: 36-62, 90=156
    * GUI: search.xml
 
 ### Feature Category: User Interactivity <br>
@@ -376,7 +366,7 @@ Production Rules:
 1. The ability to micro-interact with items in your app (e.g. add to watchlist/add to cart/like an
    item/report an item/add reviews (stars)) [stored in-memory]. (medium)
     * The user can save/remove a post to/from their wishlist. 
-    * Package homePage/posts, Class DataAdapter, methods: checkBox, addDataToFirebase, removeDataFromFirebase, Lines of code: ... 
+    * Package homePage/posts, Class DataAdapter, methods: checkBox, addDataToFirebase, removeDataFromFirebase, Lines of code: 114-126,134-146, 153-163
     * Package homePage/bookmarks, Class BookmarkAdapter
     * Package homePage/bookmarks, Class BookmarkFragment
     * GUI: menu.xml
@@ -389,25 +379,24 @@ Production Rules:
     * The user can pay for a house using either Mastercard or PayPal. 
     * Package facade, Classes MasterCard, Payment, PaymentMaker, Paypal
     * Package homePage/payment, Classes MasterCard, PaymentPage, Paypal, PaymentSuccessful
-    * Package homePage/posts, Class BookmarkAdapter
-    * Package homePage/posts, Class BookmarkFragment
+    * Package homePage/payment, Classes paymentMethod
     * GUI: activity_mastercard.xml, activity_payment_page.xml, activity_payment_successful.xml, activity_paypal
 
 ### Feature Category: Firebase Integration <br>
 #### Implemented features: <br>
 1. Use Firebase to implement user Authentication/Authorisation. (easy)
-   * User can both login and signup through Firebase Authenticati 2on/Authorisation. 
-   * Package login, Class LoginTabFragment, method loginUser, Lines of code:...
-   * Package login, Class SignUpTabFragment, method createUser, Lines of Code:...
+   * User can both login and signup through Firebase Authentication/Authorisation. 
+   * Package login, Class LoginTabFragment, method loginUser
+   * Package login, Class SignUpTabFragment, method createUser..
    * GUI: activity_login.xml, login_tab_fragment.xml, signup_tab_fragment.xml
 
 
 2. Use Firebase to persist all data used in your app. (medium)
    * All information about user posts is stored in Firebase realtime database
-   * Package homePage/posts, Class DatabaseFragment, method onCreateView, Lines of Code:...
-   * Package homePage/posts, Class DataAdapter, method addDataToFirebase, deleteDataFromFirebase, Lines of Code:... 
-   * Package homePage/bookmarks, Class BookmarkFragment, method onCreateView, Lines of Code:...
-   * GUI: item.xml, activity_database.xml, bookmark_fragment.xml, 
+   * Package homePage/posts, Class DatabaseFragment, method onCreateView, Lines of Code: 49-119
+   * Package homePage/posts, Class DataAdapter, method addDataToFirebase, deleteDataFromFirebase, Lines of Code: 135-163 
+   * Package homePage/bookmarks, Class BookmarkFragment, method onCreateView, Lines of Code: 51-102
+   * GUI: item.xml, activity_database.xml, bookmark_fragment.xml 
 
 ## Team Meetings
 

@@ -93,7 +93,6 @@ public class AVLTreeTest {
         Data data2 = new Data("something", "Canberra", "2612", "$400");
         Data data3 = new Data("something", "Canberra", "2612", "$300");
 
-
         AVLTree<Data> avl = new AVLTree<>(data1).insert(data2).insert(data3);
         String expected = "{rent=$350, leftNode={rent=$300, leftNode={}, rightNode={}}, rightNode={rent=$400, leftNode={}, rightNode={}}}";
 
