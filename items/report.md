@@ -36,32 +36,27 @@
 
 ## Summary of Individual Contributions
 
-*[Summarise the contributions made by each member to the project, e.g. code implementation, code design, UI design, report writing, etc.]*
-
-*[Code Implementation. Which features did you implement? Which classes or methods was each member involved in? Provide an approximate proportion in percentage of the contribution of each member to the whole code implementation, e.g. 30%.]*
-
 ### u7268598, Devanshi Dhall contributed 25% of the code. Here are the contributions:
 
 **Code Implementation:**
 * All classes in login package
 * All classes in tokenizer package
-* *[Data.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/posts/Data.java)*
-* homePage/posts/Data.class: compareTo()
-* stateDesignPattern/User.class: getInstance()
-* homePage/payment/mastercard.class: confirm.setOnClickListener()
-* homePage/payment/Paypal.class: confirm.setOnClickListener()
-* homePage/payment/PaymentSuccessful.class
-* homePage/posts/DatabaseFragment.class: onCreateOptionsMenu()
-* facade/PaymentMaker.class 
-* homePage/bookmarks/BookmarkAdapter.class: checkBox()
-* avl/AVLTree.class: Creation and Insertion 
-* avl/BinarySearchTree.class 
-* avl/EmptyTree.class 
-* avl/Tree.class 
-* AVLTreeTest.class: immutableTest(), insertInOrderTest()
-* ParserTest.class
-* homePage/homePageFragment.class: filterByRent(), filterByCity(), filterPosts()
-* MainActivity.class
+* [Data.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/posts/Data.java): compareTo()
+* [User.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/stateDesignPattern/User.java): getInstance()
+* [Mastercard.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/payment/Mastercard.java): confirm.setOnClickListener()
+* [Paypal.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/payment/Paypal.java): confirm.setOnClickListener()
+* [PaymentSuccessful.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/payment/PaymentSuccessful.java)
+* [DatabaseFragment.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/posts/DatabaseFragment.java): onCreateOptionsMenu()
+* [PaymentMaker.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/facade/PaymentMaker.java): onCreateOptionsMenu()
+* [BookmarkAdapter.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/bookmarks/BookmarkAdapter.java): checkBox()
+* [AVLTree.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/avl/AVLTree.java): Creation and Insertion
+* [BinarySearchTree.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/avl/BinarySearchTree.java)
+* [EmptyTree.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/avl/EmptyTree.java)
+* [Tree.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/avl/Tree.java)
+* [AVLTreeTest.class](../../ga-22s2-comp2100-6442/app/src/test/java/au/edu/anu/cecs/linkhome/AVLTreeTest.java): immutableTest(), insertInOrderTest()
+* [ParserTest.class](../../ga-22s2-comp2100-6442/app/src/test/java/au/edu/anu/cecs/linkhome/ParserTest.java)
+* [homePageFragment.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/HomePageFragment.java): filterByRent(), filterByCity(), filterPosts()
+* [MainActivity.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/MainActivity.java)
 * Graphical User Interface/ Design:
   * layout/activity_detailed_page.xml
   * layout/activity_login.xml
@@ -82,19 +77,19 @@
 **Code Implementation:**
 * All classes in stateDesignPattern package
 * All classes in avl package
-* login/LoginAdapter.class 
-* login/LoginTabFragment.class 
-* homePage/bookmarks/BookmarkFragment.class 
-* homePage/posts/DatabaseFragment.class 
-* homePage/posts/DetailedPage.class 
-* homePage/HomePage.class 
-* homePage/bookmarks/BookmarkAdapter.class 
-* homePage/posts/DataAdapter.class: addDataToFirebase()
-* homePage/posts/DataAdapter.class: deleteDataFromFirebase()
-* homePage/posts/Data.class: compareTo()
-* homePage/homePageFragment.class
-* AVLTreeTest.class  
-* MainActivity.class
+* [LoginAdapter.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/login/LoginAdapter.java)
+* [LoginTabFragment.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/login/LoginTabFragment.java)
+* [BookmarkFragment.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/bookmarks/BookmarkFragment.java )
+* [DatabaseFragment.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/posts/DatabaseFragment.java)
+* [DetailedPage.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/posts/DetailedPage.java)
+* [HomePage.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/HomePage.java)
+* [BookmarkAdapter.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/bookmarks/BookmarkAdapter.java)
+* [DataAdapter.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/posts/DataAdapter.java): addDataToFirebase()
+* [DataAdapter.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/posts/DataAdapter.java): deleteDataFromFirebase()
+* [Data.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/posts/Data.java): compareTo()
+* [homePageFragment.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/homePage/HomePageFragment.java)
+* [AVLTreeTest.class](../../ga-22s2-comp2100-6442/app/src/test/java/au/edu/anu/cecs/linkhome/AVLTreeTest.java)
+* [MainActivity.class](../../ga-22s2-comp2100-6442/app/src/main/java/au/edu/anu/cecs/linkhome/MainActivity.java)
 * Graphical User Interface/ Design:
   * layout/activity_detailed_page.xml
   * layout/activity_home_page.xml
@@ -220,79 +215,95 @@ then LinkHome helps to meet all these requirements.
 
 ## Application UML
 
-![ClassDiagramExample](./images/ClassDiagramExample.png) <br>
-*[Replace the above with a class diagram. You can look at how we have linked an image here as an example of how you can do it too.]*
+**We have not included the following classes:**
+* Tree.java, BinarySearchTree.java, EmptyTree.java as these classes are taken from lab04 and we have made less use of it.
+* Also, we have excluded all the getters and setters method of the classes to increase the readability.
+
+![UML](./images/UML.png) <br>
 
 ## Application Design and Decisions
 
-*We used the following data structures in my project:*
+**We used the following data structures in my project:**
 
 **Data Structures**
 
-1. *AVL Tree*
+1. **AVL Tree**
 
-   * *Objective: It is used for storing the searchable items in the list for search and sort features.*
+   * Objective: It is used for storing the searchable items in the list for search and sort features.
 
-   * *Locations: Under the package avl* 
+   * Locations: Under the package avl
       1. AVLTree.class
       2. BinarySearchTree
       3. EmptyTree
       4. Tree
-      5. DataBaseFragment.class()
+      5. Lines 36-46; 54-62 in HomePageFragment.class()
 
-   * *Reasons:*
+   * Reasons:
 
-     * *It is more efficient than Arraylist for insertion with a time complexity O(log n)*
-     * *AVL tree is a self balancing tree and can easily help in search feature*
-     * *It includes the property of Binary Search tree and can store the data*
-     * *Also, sorting is easy as we can compare the values by using AVL tree properties*
+     * It is more efficient than Arraylist for insertion with a time complexity O(log n)
+     * AVL tree is a self balancing tree and can easily help in search features
+     * It includes the property of Binary Search tree and can store the data
+     * Also, sorting is easy as we can compare the values by using AVL tree properties
+     
 
-2.  *HashMap*
+2.  **HashMap**
 
-    * *Objective:*
+    * Objective: It is used for storing key value pairs of city and its corresponding AVL tree. 
 
-    * *Locations:*
+    * Locations:
+       1. DatabaseFragment.java
+       2. BookmarkFragment.java
+       3. HomePageFragment.java
 
-    * *Reasons:*
+    * Reasons:
+      * This is because each city has its own AVl tree which makes it easier to filter.
+      * Each city consists of only one AVL tree. With respect to the particular city, we would have a tree of all the values stored in it.
+      * Since it does not include duplicates in the key, hence it would not generate another AVL tree.
+      
 
-        * *Add Something*
+3.  **ArrayList**
 
+    * Objective: It is used for storing objects of class Data for our application.
 
-3.  *ArrayList*
+    * Locations:
+       1. BookmarkFragment.java
+       2. DatabaseFragment.java
+       3. DataAdapter.java
+       4. BookmarkAdapter.java
 
-    * *Objective:*
-
-    * *Locations:*
-
-    * *Reasons:*
-
-      * *Add Something*
+    * Reasons:
+      * It is easier to add and delete items from the arraylist as we are frequently using this in our application
         
 
 **Design Patterns**
 
-* State Design Pattern: Used in to go from Login State to Logout State
-* Singleton Design pattern: Only one instance of User
-* Facade Design Pattern: Used for the Payment process by using two different payment modes
+* **State Design Pattern:** Used in to go from Login State to Logout State
+* **Singleton Design pattern:** Only one instance of User
+* **Facade Design Pattern:** Used for the Payment process by using two different payment modes
 
 **Grammar(s)**
 
 Production Rules:
 
-* <exp>::=  <city> <operator> <letter> | <rent> <operator> <coefficient> | <exp> || <exp> | <exp> && <exp> *
-** <operator> ::= < < | > | = > **
-** <coefficient> ::= <unsigned integer> **
-** <letter> ::= <alphabets> **
+* exp = < city operator letter > | < rent operator coefficient > | < exp || exp > | < exp && exp >
+* operator = < < | > | = > 
+* coefficient = < unsigned integer >
+* letter = < alphabets >
 
-    
-    <Non-Terminal> ::= <some output>
-    <Non-Terminal> ::= <some output>
-
-*[How do you design the grammar? What are the advantages of your designs?]*
+**Grammar Design**
+* The grammar is designed by taking into account the search criteria in our application. 
+* By making tha above mentioned grammar, it helps the user to filter records by city or rent or both.
+* For example, the user can search by adding the below mentioned query in the search bar:
+  * city=Canberra && rent<400
+  * city=Canberra || rent>400
+  * city=Canberra
+  * rent>400
+  * rent>300 && rent <400
+  * rent>300 || rent<400
 
 **Tokenizer and Parsers**
 
-**Enums: {INT, LESS, MORE, EQUAL, AND, OR, TEXT}**
+* Different types of tokens: INT, LESS, MORE, EQUAL, AND, OR, TEXT
 
 **Surprise Item**
 
@@ -304,30 +315,27 @@ Production Rules:
 
 ## Summary of Known Errors and Bugs
 
-*Here is an example:*
+**1. Bug 1:**
+- Once the user sign up in the app, the app closes and user has to clear the cache
+- Post that, the user can run the application again and sign in using the new credentials.
 
-1. *Bug 1:*
-- *A space bar (' ') in the sign in email will crash the application.*
+**2. Bug 2:**
+- On the items page, every 6th image has an filled heart icon already but the 6th image is not added to the wishlist page since the user does not add it
+- The particular 6th image is not added to the wishlist by the user
 
-2. *Bug 2:*
-- *Once the user sign up in the app, the app closes and user has to clear the cache*
-- *Now, the user run the application again and sign in using the new credentials.
+**3. Bug 3:**
+- On the items page, when the user wants to search something such as city=Canberra then if the user writes anything instead of "city", still the search happens correctly
 
-3 *Bug 3:*
-- *On the items page, every nth image is wishlist but it does not add to the wishlist page*
-
+**4. Bug 4:**
+- If the user wants to view the app in landscape mode and orientation changes, then it elements on the screen does not resize
 
 ## Testing Summary
 
-*Here is an example:*
+- Number of test cases: 9 test methods for AVLTree, 7 test methods for Parser
 
-- *Number of test cases: 10*
+- Code coverage: 25% as per android studio while running the test classes with the option "Run with Coverage"
 
-- *Code coverage: Branch Complete Test*
-
-- *Types of tests created: AVLTree test, Parser test*
-
-- *UI Testing was also done*
+- Types of tests created: AVLTree test, Parser test
 
 ## Implemented Features
 
